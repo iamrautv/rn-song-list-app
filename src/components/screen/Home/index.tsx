@@ -28,16 +28,6 @@ class Home extends Component {
           onPress={() => { navigation.navigate(routes.Login); }}
           style={styles.btnStyle}
         />
-        <Button
-          text="Goto Tab screens"
-          onPress={() => { navigation.navigate(routes.TabScreens); }}
-          style={styles.btnStyle}
-        />
-        <Button
-          text="Goto Drawer screens"
-          onPress={() => { navigation.navigate(routes.DrawerScreens); }}
-          style={styles.btnStyle}
-        />
         <Text>{Config.BASE_URL}</Text>
       </View>
     );
