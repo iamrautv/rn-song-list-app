@@ -15,30 +15,36 @@ const styles = StyleSheet.create({
   },
   leftSec: {
     marginRight: 20,
-    width: 80
   },
   artistImg: {
-    height: 70,
-    width: 70
+    height: 100,
+    width: 100
   },
   rightSec: {
     flex: 1,
     justifyContent: 'center'
   },
   collectionTxt: {
-    fontSize: 15,
+    fontSize: 22,
+    fontWeight: '500',
     flexWrap: 'wrap'
   },
-  rightSecMeta: {
+  infoItem: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 10
+    borderBottomWidth: 1,
+    borderBottomColor: '#f5f5f5',
+    paddingHorizontal: 20,
+    paddingVertical: 15,
   },
-  artistNameTxt: {
-    fontSize: 13
+  infoLbl: {
+    fontSize: 15,
+    width: 130
   },
-  timeTxt: {
-    fontSize: 13
+  infoTxt: {
+    flex: 1,
+    marginLeft: 15,
+    fontSize: 15,
+    fontWeight: '500',
   },
 });
 

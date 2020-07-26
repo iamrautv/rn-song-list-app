@@ -1,5 +1,5 @@
 import { commondTypes as CT } from '../config';
-import axios, { AxiosRequestConfig } from 'axios';
+import axios from 'axios';
 import Config from 'react-native-config';
 import { helpers, constants } from '../config';
 import * as T from './types';
@@ -16,13 +16,15 @@ const apiRequest = (type: string, data: CT.MetaObj, url: string, header: CT.ApiH
       url: `${BASE_URL}${url}`,
       data
     });
+
     const resData = res.data;
     if (res.status === statusCodes.success) {
-      resolve(resData.data);
+      resolve(resData);
     } else {
       reject({});
     }
   } catch (err) {
+    console.log({ err });
     reject({});
   }
 });
